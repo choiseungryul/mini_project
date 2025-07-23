@@ -1,0 +1,120 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.header {
+ display: flex;
+ background: snow;
+ justify-content: space-between;
+ align-items: center;
+ width: 1000px;
+ padding: 50px;
+ margin: auto;
+ margin-top: 50px;
+}
+
+.section {
+  display: flex;
+  background: whitesmoke;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 50px;
+  margin: auto;
+  margin-top: 200px;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.left-box {
+  width: 20%;
+}
+
+.right-box {
+  width: 70%;
+}
+
+.title {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.middle {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.write {
+  padding-top: 30px;
+}
+
+.image-title, .image-title2, .image-title3 {
+  background: papayawhip;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.image-title {
+  margin-top: 200px;
+}
+
+.image-title2 {
+  margin-top: 200px;
+}
+
+.image-title3 {
+  margin-top: 200px;
+}
+
+.image-title h2,
+.image-title2 h2,
+.image-title3 h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.images1,
+.images2,
+.images3 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.bottom {
+  display: flex;
+  background: cornsilk;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid lightgray;
+  width: 100%;
+  height: 200px;
+}
+
+.bottom ul {
+  list-style: none;
+}
+
+.bottom h3 {
+  font-style: oblique;
+}
+
+.bottom li {
+  margin: 10px 0;
+  font-size: 18px;
+  font-style: oblique;
+  color: #333;
+}
+
+.bottom li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bottom li a:hover {
+  color: #007bff;
+}
