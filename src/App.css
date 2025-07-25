@@ -3,3 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-collapse .nav-link {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  color: var(--text-color);
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

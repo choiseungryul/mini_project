@@ -1,0 +1,55 @@
+.intro {
+  width: 1500px;
+  margin: 30px auto 0 auto;
+}
+
+.intro-title {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.intro-site {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.intro-text {
+  flex-direction: column;
+  width: 800px;
+  gap: 20px;
+}
+
+.intro-thirdtitle {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.intro-members {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.intro > .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn button {
+  all: unset;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn button:hover,
+.ytb-btn button:hover,
+.insta-btn button:hover {
+  background-color: white;
+  color: black;
+}

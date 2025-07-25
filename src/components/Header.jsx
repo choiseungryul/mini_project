@@ -10,21 +10,21 @@ function Header() {
   const navigate = useNavigate();
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand={false} className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand onClick={() => navigate('/')} style={{cursor: 'pointer'}}>여행에 미쳤다</Navbar.Brand>
+        <Navbar.Brand onClick={() => navigate('/')} style={{cursor: 'pointer'}}>여행합니다</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
+            className="me-auto flex-column text-center"
             style={{ maxHeight: '100px'}}
 
           >
-            <Nav.Link onClick={() => navigate('/')} >Home</Nav.Link>
-            <Nav.Link onClick={() => navigate('/contents')}>contents</Nav.Link>
-            <Nav.Link onClick={() => navigate('/business')}>Business</Nav.Link>
+            <Nav.Link onClick={() => navigate('/')} style={{color:'black'}}>Home</Nav.Link>
+            <Nav.Link onClick={() => navigate('/introduce')} style={{color:'black'}}>Introduce</Nav.Link>
+            <Nav.Link onClick={() => navigate('/contents')} style={{color:'black'}}>contents</Nav.Link>
           </Nav>
-          <Form className="d-flex mt-3">
+{/*          <Form className="d-flex mt-3">
             <Form.Control
               type="search"
               placeholder="Search"
@@ -32,7 +32,7 @@ function Header() {
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
-          </Form>
+          </Form> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

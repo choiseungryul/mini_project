@@ -1,23 +1,19 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 50px;
 }
 
 .header {
- display: flex;
- background: snow;
- justify-content: space-between;
- align-items: center;
- width: 1000px;
- padding: 50px;
- margin: auto;
- margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  padding: 50px;
+  margin-top: 50px;
 }
 
 .section {
   display: flex;
-  background: whitesmoke;
   justify-content: space-between;
   align-items: flex-start;
   padding: 0 50px;
@@ -36,21 +32,21 @@
 }
 
 .title {
-  font-size: 32px;
+  font-size: 24px;
   margin-top: 10px;
 }
 
 .middle {
-  font-size: 24px;
+  font-size: 32px;
   margin-top: 10px;
+  color: var(--text-color);
 }
 
 .write {
   padding-top: 30px;
 }
 
-.image-title, .image-title2, .image-title3 {
-  background: papayawhip;
+.image-title, .image-title2 {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -63,20 +59,24 @@
   margin-top: 200px;
 }
 
-.image-title3 {
-  margin-top: 200px;
-}
-
 .image-title h2,
-.image-title2 h2,
-.image-title3 h2 {
+.image-title2 h2 {
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.images1,
-.images2,
-.images3 {
+.images1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 50px;
+  width: 100%;
+  padding: 0 10px;
+  max-width: 960px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.images2 {
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -84,9 +84,22 @@
   margin-top: 0;
 }
 
+.image-title button,
+.image-title2 button {
+  all: unset;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.image-title button:hover,
+.image-title2 button:hover {
+  background-color: white;
+  color: black;
+}
+
 .bottom {
   display: flex;
-  background: cornsilk;
   justify-content: space-around;
   align-items: center;
   gap: 10px;
@@ -116,5 +129,5 @@
 }
 
 .bottom li a:hover {
-  color: #007bff;
+  color: var(--main-color);
 }

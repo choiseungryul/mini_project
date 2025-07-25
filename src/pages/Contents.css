@@ -1,0 +1,78 @@
+.ctn-header {
+  max-width: 1200px;
+  margin-left: 10%;
+  margin: 5% auto;
+  padding: 0 20px;
+}
+
+.ctn-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 5% auto;
+}
+
+.ytb-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10%;
+}
+
+.ytb-img {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ytb-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ytb-btn button {
+  all: unset;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.btn button:hover {
+  background-color: whitesmoke;
+}
+
+.insta-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10%;
+}
+
+.insta-img {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.insta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10%;
+}
+
+.insta-btn button {
+  all: unset;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.insta button:hover {
+  background-color: whitesmoke;
+}

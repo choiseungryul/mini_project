@@ -2,6 +2,8 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import MainPage from './pages/MainPage'
+import Introduce from './pages/Introduce'
+import Contents from './pages/Contents'
 
 function App() {
 
@@ -10,10 +12,9 @@ function App() {
      <Header />
       <Routes>
         <Route path='/' element={<MainPage />} />
-        <Route path='/contents' element={<div>콘텐츠</div>} />
-        <Route path='/business' element={<div>주요사업</div>} />
+        <Route path='/introduce' element={<Introduce />} />
+        <Route path='/contents' element={<Contents />} />
       </Routes>
-
 
     </>
   );
