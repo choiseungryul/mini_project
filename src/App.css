@@ -20,3 +20,58 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
+
+.location {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+.location-title {
+  margin-bottom: 20px;
+}
+
+.location-title h2 {
+  font-weight: bold;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.location-footer-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.location-footer-title h2 {
+  font-weight: bold;
+}
+
+.location-footer-main  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.location-footer-main p {
+  font-size: 18px;
+}
+
+.marker {
+  color: black;
+  width: 150px;
+  text-align: center;
+}

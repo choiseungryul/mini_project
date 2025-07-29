@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -8,21 +9,27 @@ import { useNavigate } from 'react-router-dom';
 
 function Header() {
   const navigate = useNavigate();
+  const navbarToggleRef = useRef(null);
+
+  const handleNavClick = (path) => {
+    navigate(path);
+    if(navbarToggleRef.current) {
+      navbarToggleRef.current.click();
+    }
+  };
 
   return (
-    <Navbar expand={false} className="bg-body-tertiary">
+    <Navbar expand={false} bg="black" data-bs-theme="black">
       <Container fluid>
-        <Navbar.Brand onClick={() => navigate('/')} style={{cursor: 'pointer'}}>여행합니다</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Brand
+        onClick={() => handleNavClick('/')}
+        style={{cursor: 'pointer', color: 'white', marginLeft: '20px'}}>여행합니다</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" ref={navbarToggleRef} />
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto flex-column text-center"
-            style={{ maxHeight: '100px'}}
-
-          >
-            <Nav.Link onClick={() => navigate('/')} style={{color:'black'}}>Home</Nav.Link>
-            <Nav.Link onClick={() => navigate('/introduce')} style={{color:'black'}}>Introduce</Nav.Link>
-            <Nav.Link onClick={() => navigate('/contents')} style={{color:'black'}}>contents</Nav.Link>
+          <Nav className="me-auto flex-column text-center" style={{ maxHeight: '100px'}}>
+            <Nav.Link onClick={() => handleNavClick('/')} style={{color:'white'}}>Home</Nav.Link>
+            <Nav.Link onClick={() => handleNavClick('/introduce')} style={{color:'white'}}>Introduce</Nav.Link>
+            <Nav.Link onClick={() => handleNavClick('/contents')} style={{color:'white'}}>contents</Nav.Link>
           </Nav>
 {/*          <Form className="d-flex mt-3">
             <Form.Control
