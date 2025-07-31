@@ -26,6 +26,7 @@ body {
   flex-direction: column;
   margin-left: 300px;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .location-title {
