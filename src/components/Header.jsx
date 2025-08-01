@@ -26,10 +26,10 @@ function Header() {
         style={{cursor: 'pointer', color: 'white', marginLeft: '20px'}}>여행합니다</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" ref={navbarToggleRef} />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto flex-column text-center" style={{ maxHeight: '100px'}}>
-            <Nav.Link onClick={() => handleNavClick('/')} style={{color:'white'}}>Home</Nav.Link>
-            <Nav.Link onClick={() => handleNavClick('/introduce')} style={{color:'white'}}>Introduce</Nav.Link>
-            <Nav.Link onClick={() => handleNavClick('/contents')} style={{color:'white'}}>contents</Nav.Link>
+          <Nav className="me-auto flex-column text-center" style={{ maxHeight: '100px', overflowY: 'auto'}}>
+            <Nav.Link onClick={() => handleNavClick('/')}>Home</Nav.Link>
+            <Nav.Link onClick={() => handleNavClick('/introduce')}>Introduce</Nav.Link>
+            <Nav.Link onClick={() => handleNavClick('/contents')}>contents</Nav.Link>
           </Nav>
 {/*          <Form className="d-flex mt-3">
             <Form.Control

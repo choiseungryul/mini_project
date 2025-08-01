@@ -38,7 +38,7 @@ function Introduce ({content}) {
                   key={index}
                   src={`https://raw.githubusercontent.com/choiseungryul/picture/refs/heads/main/project_insta/${data.name}.PNG`}
                   alt={data.name}
-                  style={{width: '300px', height: '500px'}}
+                  style={{width: '100%', height: '500px'}}
                 />
                 <div className="overlay">인스타 이동하기</div>
               </a>
