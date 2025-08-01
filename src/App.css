@@ -77,3 +77,51 @@ body {
   width: 150px;
   text-align: center;
 }
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.logo h3 {
+  color: var(--text-color);
+  list-style: none;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.text-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.text-links li {
+  text-align: center;
+}
+
+.text-links a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.icon-links {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.image-link {
+  display: inline-flex;
+  align-items: center;
+}
