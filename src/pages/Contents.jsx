@@ -2,6 +2,9 @@ import { useState } from 'react';
 import YouTube from 'react-youtube';
 import './Contents.css'
 import AnimatedNumber from '../components/AnimatedNumber';
+import YeomiImage from '../assets/yeomi.PNG'
+import Lils3Image from '../assets/lils3.PNG'
+import CampingImage from '../assets/camping.PNG'
 
 function Contents ({ytb, insta}) {
   const [ytbCount, setYtbCount] = useState(3);
@@ -63,7 +66,7 @@ function Contents ({ytb, insta}) {
         </div>
         <div className='insta-img'>
         <div className='image-box'>
-          <img src="../public/yeomi.PNG" alt="" style={{width: '400px', height: '400px'}} />
+          <img src={YeomiImage} alt="여기어때 광고홍보" style={{width: '400px', height: '400px'}} />
           <div className="text">
             <h3>여기어때 <br/> 옥외광고 홍보</h3>
           <p>
@@ -74,7 +77,7 @@ function Contents ({ytb, insta}) {
           </div>
         </div>
         <div className='image-box'>
-          <img src="../public/lils3.PNG" alt="" style={{width: '400px', height: '400px'}} />
+          <img src={Lils3Image} alt="아시아나 항공노선 홍보" style={{width: '400px', height: '400px'}} />
           <div className="text">
             <h3>아시아나 <br/> 항공노선 홍보</h3>
             <p>
@@ -85,7 +88,7 @@ function Contents ({ytb, insta}) {
           </div>
         </div>
         <div className='image-box'>
-          <img src="../public/camping.PNG" alt="" style={{width: '400px', height: '400px'}} />
+          <img src={CampingImage} alt="캠핑의여정 프로젝트" style={{width: '400px', height: '400px'}} />
           <div className="text">
             <h3>캠핑의여정 프로젝트</h3>
             <p>
